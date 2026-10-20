@@ -1,0 +1,141 @@
+{
+  "top_pairs": {
+    "truck->automobile": 1247,
+    "automobile->truck": 1126,
+    "cat->dog": 924,
+    "dog->cat": 834,
+    "deer->horse": 683,
+    "deer->dog": 491,
+    "airplane->ship": 379,
+    "frog->bird": 373
+  },
+  "top8_share_real": 0.3344745706554752,
+  "top8_share_synth": 0.10042119264021282,
+  "truck_auto_both_ways": 0.13103981445689988,
+  "cat_dog_both_ways": 0.09707880059638854,
+  "t2": {
+    "early_stop_epoch": 35,
+    "memorization_start_epoch": 37,
+    "mislabeled_fit_at_36": 0.163399414655696,
+    "mislabeled_fit_at_60": 0.6840797393561213,
+    "val_clean_at_early": 0.7944,
+    "val_clean_final": 0.6934
+  },
+  "learnable": {
+    "sys_fit_ep5": 0.19564140663694898,
+    "oth_fit_ep5": 0.0930136076999668,
+    "syn_fit_ep5": 0.056085125249390376,
+    "sys_fit_ep35": 0.2372461614660723,
+    "oth_fit_ep35": 0.10960836375705277,
+    "syn_fit_ep35": 0.044114387053868324,
+    "sys_fit_ep60": 0.7800891530460624,
+    "oth_fit_ep60": 0.6358280783272486,
+    "syn_fit_ep60": 0.5498780758146753
+  },
+  "t3": {
+    "oof_avg": {
+      "auroc": 0.9453663888284464,
+      "precision_at_k": 0.8377602297200287
+    },
+    "loss_avg": {
+      "auroc": 0.9599009993896555,
+      "precision_at_k": 0.8671378872383898
+    },
+    "loss_early": {
+      "auroc": 0.938140946058635,
+      "precision_at_k": 0.8389750952565023
+    },
+    "oof_final": {
+      "auroc": 0.874994732468857,
+      "precision_at_k": 0.7565851234192943
+    },
+    "recall_top8_pairs": 0.6367838864124153,
+    "recall_other": 0.9387653501493528,
+    "share_of_missed_in_top8": 0.7488087134104833,
+    "false_flag_rate_by_class": {
+      "airplane": 0.09811965811965812,
+      "automobile": 0.026345502446368085,
+      "bird": 0.1470795214637579,
+      "cat": 0.24215867158671586,
+      "deer": 0.20546697038724374,
+      "dog": 0.13816793893129772,
+      "frog": 0.1109865470852018,
+      "horse": 0.06931608133086876,
+      "ship": 0.0494148244473342,
+      "truck": 0.06074014481094127
+    }
+  },
+  "t4t5": {
+    "CE_real": {
+      "best_epoch": 35,
+      "sel_val_best": 0.5578,
+      "sel_val_final": 0.4988,
+      "clean_val_best": 0.7944,
+      "clean_val_final": 0.6934,
+      "mislabeled_fit_final": 0.6840797393561213
+    },
+    "CE_synth": {
+      "best_epoch": 40,
+      "sel_val_best": 0.5022,
+      "sel_val_final": 0.424,
+      "clean_val_best": 0.8254,
+      "clean_val_final": 0.6826,
+      "mislabeled_fit_final": 0.5498780758146753
+    },
+    "GCE_real": {
+      "best_epoch": 51,
+      "sel_val_best": 0.5724,
+      "sel_val_final": 0.571,
+      "clean_val_best": 0.8228,
+      "clean_val_final": 0.8144,
+      "mislabeled_fit_final": 0.29057374786018
+    },
+    "GCE_synth": {
+      "best_epoch": 60,
+      "sel_val_best": 0.5256,
+      "sel_val_final": 0.5256,
+      "clean_val_best": 0.877,
+      "clean_val_final": 0.877,
+      "mislabeled_fit_final": 0.0730436710263799
+    },
+    "DivideMix_real": {
+      "best_epoch": 55,
+      "sel_val_best": 0.5928,
+      "sel_val_final": 0.59,
+      "clean_val_best": 0.9204,
+      "clean_val_final": 0.919,
+      "mislabeled_fit_final": 0.1008338395273068
+    },
+    "DivideMix_synth": {
+      "best_epoch": 58,
+      "sel_val_best": 0.5584,
+      "sel_val_final": 0.557,
+      "clean_val_best": 0.9422,
+      "clean_val_final": 0.942,
+      "mislabeled_fit_final": 0.017956107293283
+    },
+    "Filter_real": {
+      "best_epoch": 52,
+      "sel_val_best": 0.5722,
+      "sel_val_final": 0.5672,
+      "clean_val_best": 0.8324,
+      "clean_val_final": 0.828
+    },
+    "Relabel_real": {
+      "best_epoch": 53,
+      "sel_val_best": 0.5662,
+      "sel_val_final": 0.5638,
+      "clean_val_best": 0.8222,
+      "clean_val_final": 0.8234
+    }
+  },
+  "clean_ref_clean_val": 0.9468,
+  "dividemix_split": {
+    "human_labeled_frac_final": 0.6249,
+    "human_labeled_purity_final": 0.9328263202008289,
+    "human_noisy_recall_final": 0.8956872273455188,
+    "synthetic_labeled_frac_final": 0.5879444444444444,
+    "synthetic_labeled_purity_final": 0.9869224771883907,
+    "synthetic_noisy_recall_final": 0.9808246508534693
+  }
+}
